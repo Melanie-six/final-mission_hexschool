@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+body{
+    font-family: "Noto Sans TC";
+    line-height: 1.5;
+    background: #FBFBFB;
+}
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.wrap{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+/*nav*/
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav a{
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    margin: 24px 20px;
+}
+
+/*banner*/
+.banner{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.banner_left{
+    width: 50%;
+    margin-right: 24px;
+}
+.banner_left img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.banner_right{
+    width: 50%;
+}
+.course{
+    width: 66%;
+}
+.hashtag{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hashtag a{
+    font-size: 24px;
+    color: #0027D5;
+    margin-right: 8px;
+}
+.hotissue{
+    color: white;
+    background: #0027D5;
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 6px 12px;
+}
+.course h3{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/*footer*/
+footer{
+    border-top: 1px solid black;
+}
+.footer{
+    width: 67.5%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .mail{
+    font-size: 32px;
+    line-height: 1.5;
+    text-decoration: none;
+    color:black;
+}
+.footer .mail:hover{
+    color:#0027D5;
+}
+.link_icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link_icon img:hover{
+    transform: scale(1.3);
+}
+.copyright{
+    line-height: 1.5;
+    text-align: center;
+    margin: 24px;
+}
+
+/*content*/
+.content{
+    width: 33%;
+    padding: 80px 0px;
+    margin: 0 auto;
+}
+.card_slide{
+    margin-bottom: 48px;
+}
+.card_slide h3{
+    font-size: 28px;
+    font-weight: bold;
+    color:#0027D5;
+    margin-bottom: 24px;
+}
+.card_slide img{
+    margin-bottom: 24px;
+}
+.card_slide h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.card_slide p{
+    margin-bottom: 8px;
+}
+.tips{
+    background: #EDEDED;
+    font-weight: bold;
+    border-radius: 24px;
+    padding: 24px;
+}
+.card_slide .numbered_list{
+    list-style-type: decimal;
+    margin-left: 1.5em;
+    margin-bottom: 24px;
+}
+.card_slide .disc_list{
+    list-style-type: disc;
+    margin-left: 1.5em;
+    margin-bottom: 24px;
+}
+.mt24{
+    margin-top: 24px;
+}
+.mb24{
+    margin-bottom: 24px;
+}
+.colorblue{
+    color:#0027D5;
+}
+.turnpage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.turnpage a{
+    border:1px solid black;
+    border-radius: 40px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+}
+@media (max-width:992px){
+    .wrap{
+        max-width: 992px;
+        margin: 0 auto;
+    }
+    .content{
+        width: 70%;
+        padding: 64px 12px;
+        margin: 0 auto;
+    }
+}
+@media (max-width:767px){
+    .wrap{
+        max-width: 767px;
+        margin: 0 auto;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner_left, .banner_right{
+        width: 100%;
+    }
+    .course{
+        width: 100%;
+        padding: 48px 12px;
+    }
+    .hashtag{
+        margin-bottom: 8px;
+    }
+    .content{
+        width: 100%;
+        padding: 64px 12px;
+        margin: 0 auto;
+    }
+    .footer{
+        display: none;
+    }
+}
